@@ -13,7 +13,7 @@ router.get('/get-configs/:id', function(req, res, next) {
       if (data) {
         res.status(200).jsonp({
           success: true,
-          nameSelector: '.d-inline-block.dropdown-toggle.icon-no-margin',
+          nameSelector: '.dropdown-item.text-username.menu-action',
           ...data._doc
         })
       } else {
